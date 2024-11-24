@@ -1,4 +1,4 @@
-package com.gvapps.dictionaryapp
+package com.gvapps.dictionaryapp.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
