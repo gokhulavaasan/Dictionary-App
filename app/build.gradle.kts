@@ -39,6 +39,9 @@ android {
 	buildFeatures {
 		compose = true
 	}
+	kapt {
+		correctErrorTypes = true
+	}
 }
 
 dependencies {
@@ -66,8 +69,8 @@ dependencies {
 
 	// Dagger - Hilt
 	implementation("com.google.dagger:hilt-android:2.51.1")
-	kapt("com.google.dagger:hilt-compiler:2.44")
-	kapt("androidx.hilt:hilt-compiler:1.2.0")
+	kapt("com.google.dagger:hilt-compiler:2.51")
+//	kapt("androidx.hilt:hilt-compiler:1.2.0")
 	implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
 	// Coroutines
@@ -79,6 +82,6 @@ dependencies {
 	implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
 	// System ui controller
-	implementation ("com.google.accompanist:accompanist-systemuicontroller:0.34.0")
+	implementation("com.google.accompanist:accompanist-systemuicontroller:0.34.0")
 
 }
